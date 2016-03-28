@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -41,13 +42,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cds-OC-rRS">
-                                <rect key="frame" x="396" y="267" width="33" height="67"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="46"/>
-                                <state key="normal" title="C">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRM-tQ-mAB">
                                 <rect key="frame" x="169" y="341" width="32" height="79"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="56"/>
@@ -66,16 +60,6 @@
                                 <rect key="frame" x="296" y="341" width="32" height="79"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="56"/>
                                 <state key="normal" title="6">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qi-jO-PdV">
-                                <rect key="frame" x="399" y="356" width="31" height="26"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="31" id="HZw-DY-za4"/>
-                                    <constraint firstAttribute="height" constant="26" id="W2E-6p-iH0"/>
-                                </constraints>
-                                <state key="normal" image="Divide Sign">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -100,12 +84,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3En-nw-N44">
-                                <rect key="frame" x="403" y="533" width="22" height="19"/>
-                                <state key="normal" image="Plus Sign">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="147-vc-Ite">
                                 <rect key="frame" x="266" y="544" width="32" height="16"/>
                                 <state key="normal" image="Equals Sign">
@@ -119,26 +97,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4J-9i-K1x">
-                                <rect key="frame" x="403" y="482" width="22" height="5"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="5" id="KX9-fJ-3iq"/>
-                                    <constraint firstAttribute="width" constant="22" id="nLW-qo-J9x"/>
-                                </constraints>
-                                <state key="normal" image="Minus Sign">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Z6-V3-jHi">
-                                <rect key="frame" x="403" y="413" width="22" height="19"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="22" id="5oz-Om-wqK"/>
-                                    <constraint firstAttribute="height" constant="19" id="FOb-hB-cY4"/>
-                                </constraints>
-                                <state key="normal" image="Multiply Sign">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3K3-t1-e9X">
                                 <rect key="frame" x="297" y="260" width="31" height="76"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="54"/>
@@ -146,6 +104,65 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" axis="vertical" alignment="center" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="M25-IK-Efy">
+                                <rect key="frame" x="396" y="266" width="33" height="289"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cds-OC-rRS">
+                                        <rect key="frame" x="0.0" y="0.0" width="33" height="68"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="cds-OC-rRS" secondAttribute="height" multiplier="33:67" id="bFv-jQ-24B"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="46"/>
+                                        <state key="normal" title="C">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qi-jO-PdV">
+                                        <rect key="frame" x="1" y="106" width="31" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="31" id="HZw-DY-za4"/>
+                                            <constraint firstAttribute="height" constant="26" id="W2E-6p-iH0"/>
+                                            <constraint firstAttribute="width" secondItem="3Qi-jO-PdV" secondAttribute="height" multiplier="31:26" id="XJv-Oa-m8T"/>
+                                        </constraints>
+                                        <state key="normal" image="Divide Sign">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Z6-V3-jHi">
+                                        <rect key="frame" x="6" y="170" width="22" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="22" id="5oz-Om-wqK"/>
+                                            <constraint firstAttribute="height" constant="19" id="FOb-hB-cY4"/>
+                                            <constraint firstAttribute="width" secondItem="4Z6-V3-jHi" secondAttribute="height" multiplier="22:19" id="swO-Xf-tgz"/>
+                                        </constraints>
+                                        <state key="normal" image="Multiply Sign">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4J-9i-K1x">
+                                        <rect key="frame" x="6" y="227" width="22" height="5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="5" id="KX9-fJ-3iq"/>
+                                            <constraint firstAttribute="width" secondItem="k4J-9i-K1x" secondAttribute="height" multiplier="22:5" id="gqd-fV-dsj"/>
+                                            <constraint firstAttribute="width" constant="22" id="nLW-qo-J9x"/>
+                                        </constraints>
+                                        <state key="normal" image="Minus Sign">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3En-nw-N44">
+                                        <rect key="frame" x="6" y="270" width="22" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="3En-nw-N44" secondAttribute="height" multiplier="22:19" id="5RX-et-GiL"/>
+                                            <constraint firstAttribute="width" constant="22" id="d2P-Eh-P19"/>
+                                            <constraint firstAttribute="height" constant="19" id="fk7-O2-a48"/>
+                                        </constraints>
+                                        <state key="normal" image="Plus Sign">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
